@@ -50,7 +50,7 @@ The project converts **raw business data** into **actionable insights** using in
 
 ## 🧩 Data Model Diagram
 
-![Data Model](screenshots/data_model.png)
+![Data Model](data_model.png)
 
 ---
 
