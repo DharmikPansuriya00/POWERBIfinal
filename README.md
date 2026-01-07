@@ -1,77 +1,103 @@
-# 📊 Power BI Expert Dashboard  
-### *End-to-End Data Modeling, DAX & Business Intelligence Solution*
+## 🧭 Business Questions Answered
 
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Level](https://img.shields.io/badge/Level-Advanced-blue)
-![Domain](https://img.shields.io/badge/Domain-Business%20Intelligence-purple)
+This dashboard is designed to answer key decision-making questions:
 
----
-
-## 🧠 Project Overview
-
-This **Power BI Expert Dashboard** is a **production-ready Business Intelligence solution** designed to demonstrate **advanced Power BI skills** including:
-
-✔ Data Modeling (Star Schema)  
-✔ Advanced DAX Calculations  
-✔ Time Intelligence  
-✔ Performance Optimization  
-✔ Interactive & Insight-Driven Dashboards  
-
-The project converts **raw business data** into **actionable insights** using industry-standard BI practices.
+- 📈 Are sales and profits increasing or declining over time?
+- 🌍 Which regions and markets contribute the most revenue?
+- 🧑‍🤝‍🧑 Who are the highest-value customers?
+- 📦 Which products drive profit vs loss?
+- 📉 Where are performance gaps or inefficiencies?
+- ⏱ How does performance vary MoM, QoQ, and YoY?
 
 ---
 
-## 🎯 Business Objectives
+## 📊 KPI Definitions
 
-- Analyze overall **business performance**
-- Track **sales, profit, and growth trends**
-- Identify **top & bottom performing segments**
-- Enable **data-driven decision making**
-- Provide a **scalable reporting model**
-
----
-
-## 🗂 Dataset & Data Model
-
-### 🔹 Data Sources
-- Fact & Dimension tables (Sales, Customers, Products, Date, Region)
-- Structured using **best-practice normalization**
-
-### 🔹 Data Modeling Approach
-- ⭐ **Star Schema**
-- One-to-Many relationships
-- Proper cardinality & filter flow
-- Dedicated **Date Table** for time intelligence
-
-📌 *Model optimized for performance and DAX accuracy.*
+| KPI | Description | Business Value |
+|---|---|---|
+| Total Sales | Total revenue generated | Measures topline growth |
+| Total Profit | Revenue minus cost | Indicates profitability |
+| Profit Margin % | Profit as % of sales | Efficiency indicator |
+| YTD Sales | Sales from start of year | Tracks annual performance |
+| YoY Growth % | Year-over-year growth | Trend comparison |
+| Avg Order Value | Revenue per transaction | Customer value |
 
 ---
 
-## 🧩 Data Model Diagram
+## 🧠 Analytical Techniques Applied
 
-![Data Model](data_model.png)
+- ✔ Descriptive Analytics (What happened?)
+- ✔ Diagnostic Analytics (Why it happened?)
+- ✔ Comparative Analysis (YoY / MoM)
+- ✔ Trend Analysis (Time-based patterns)
+- ✔ Segmentation Analysis (Customer, Product, Region)
 
 ---
 
-## 📐 Key Metrics (DAX Measures)
+## 🛠 Power BI Features Used
 
-Some of the **expert-level DAX measures** implemented:
+- 📌 Star Schema Data Modeling  
+- 📌 Dedicated Date Table  
+- 📌 Advanced DAX Measures  
+- 📌 Dynamic Titles & Tooltips  
+- 📌 Drill-through Pages  
+- 📌 Slicers for Interactive Filtering  
+- 📌 Optimized Relationships & Filter Flow  
 
-```DAX
-Total Sales = SUM(Sales[Revenue])
+---
 
-Total Profit = 
-SUM(Sales[Revenue]) - SUM(Sales[Cost])
+## ⚙ Performance Optimization
 
-Profit Margin % =
-DIVIDE([Total Profit], [Total Sales], 0)
+- Removed unused columns
+- Used measures instead of calculated columns
+- Leveraged variables in DAX
+- Optimized relationships
+- Reduced visual-level calculations
 
-YTD Sales =
-TOTALYTD([Total Sales], 'Date'[Date])
+🚀 Result: Faster rendering & scalable model
 
-YoY Growth % =
-DIVIDE(
-    [Total Sales] - [Sales Last Year],
-    [Sales Last Year]
-)
+---
+
+## 🧪 Data Validation & Accuracy
+
+- ✔ Totals cross-verified
+- ✔ Filter context tested
+- ✔ Edge cases handled in DAX
+- ✔ Time intelligence validated
+
+---
+
+## 🔄 Data Refresh Strategy
+
+| Refresh Type | Status |
+|---|---|
+| Manual Refresh | ✅ Supported |
+| Scheduled Refresh | ❌ Requires Power BI Service |
+| Incremental Refresh | ❌ Not Implemented |
+
+---
+
+## 🔐 Data Security & Governance
+
+- No PII (Personally Identifiable Information)
+- Public-safe dataset
+- RLS not applied (can be extended)
+
+---
+
+## ⚠ Assumptions & Limitations
+
+### Assumptions
+- Data is complete and accurate
+- Uniform currency across regions
+- Continuous calendar dates
+
+### Limitations
+- Static dataset (no live source)
+- No predictive forecasting
+- External factors not modeled
+
+---
+
+## 📁 Repository Structure
+
