@@ -99,5 +99,4 @@ This dashboard is designed to answer key decision-making questions:
 
 ---
 
-## 📁 Repository Structure
 
